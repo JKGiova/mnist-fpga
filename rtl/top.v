@@ -38,7 +38,7 @@ module top(
             end else if (busy && in_valid) begin
                 acc <= acc + product; // Accumulate the product
 
-                if (count == 783) begin // Assuming we want to process 10 inputs
+                if (count == 783) begin // Assuming we want to process 784 inputs
                     busy <= 0;
                     done <= 1;
                 end else begin
