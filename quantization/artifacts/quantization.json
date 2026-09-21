@@ -1,0 +1,51 @@
+{
+  "architecture": {
+    "inputs": 784,
+    "hidden": 16,
+    "outputs": 10,
+    "activation": "ReLU"
+  },
+  "input": {
+    "dtype": "int8",
+    "range": [
+      0,
+      127
+    ],
+    "scale": 0.007874015748031496,
+    "zero_point": 0
+  },
+  "fc1": {
+    "weight_dtype": "int8",
+    "weight_scale": 0.008566049140269361,
+    "bias_dtype": "int32",
+    "bias_scale": 6.744920582889261e-05,
+    "accumulator_dtype": "int32"
+  },
+  "hidden": {
+    "dtype": "int8",
+    "range": [
+      0,
+      127
+    ],
+    "right_shift": 12,
+    "scale": 0.27627194707514413,
+    "calibration_maximum": 376443
+  },
+  "fc2": {
+    "weight_dtype": "int8",
+    "weight_scale": 0.010798722740233415,
+    "bias_dtype": "int32",
+    "bias_scale": 0.0029833841573689212,
+    "accumulator_dtype": "int32"
+  },
+  "metrics": {
+    "samples": 10000,
+    "fp32_accuracy": 95.1,
+    "int8_accuracy": 95.0,
+    "prediction_agreement": 99.66,
+    "fc1_accumulator_min": -509191,
+    "fc1_accumulator_max": 385102,
+    "fc2_accumulator_min": -12464,
+    "fc2_accumulator_max": 7281
+  }
+}
