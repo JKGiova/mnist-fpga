@@ -14,7 +14,7 @@ from model import MnistMLP
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_DATA_DIR = SCRIPT_DIR / "data"
-DEFAULT_OUTPUT = SCRIPT_DIR / "artifacts" / "mnist_mlp_fp32.pt"
+DEFAULT_OUTPUT = SCRIPT_DIR / "artifacts" / "mnist-mlp-fp32.pt"
 
 
 def parse_args() -> argparse.Namespace:
